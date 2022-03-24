@@ -36,4 +36,25 @@ for (let i=0; i<a.length;i++){
 }
 
 //cuarto ejercicio
+const frutas = ['naranja', 'fresa', 'sandia', 'uvas', 'cerezas','manzana'];
+frutas.forEach((elemento, indice, array) => {
+  console.log(elemento, indice);
+});
+frutas.sort((fruta1, fruta2) => {
+  if (fruta1 < fruta2) {
+    return -1;
+  }
+  if (fruta1 > fruta2) {
+    return 1;
+  }
+  return 0;
+});
+console.log('Frutas Ordenadas: ', frutas);
+const berries = frutas.filter((elemento) => {
+  if (elemento === 'fresa' || elemento === 'cereza') {
+    return true;
+  }
+
+  return false;
+});
 
