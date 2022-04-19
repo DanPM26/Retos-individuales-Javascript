@@ -1,0 +1,31 @@
+//Eliminar un elemento de un array, dado un índice.eliminarIndice([1,2,3,4,5], 2) // [1,2,4,5]
+ let arr = [1,2,3,4,5];
+  console.log(arr);
+arr.splice(2,1);
+console.log(arr);
+
+//Determinar si un elemento existe dentro de un array.busquedaArray([1, ‘hola’, ‘adiós’, 4, 100], ‘hola’) // Se encontró el elemento
+
+let arrdos = [1,'hola','adiós', 4 , 100];
+arrdos[5] = 'hola';
+console.log(arrdos);
+let encontrarElemento = arr.find(element => element > 3);
+console.log(encontrarElemento);
+
+//Crear un arreglo con objetos y determinar si existe un valor determinado en las propiedades de los objetos.let infoLibros = [{ titulo: “El Quijote”, autor: “Miguel C.”},{ titulo: “Señor de las moscas”, autor: “William G.”},]
+
+
+let infolibros = [{
+  "titulo":"El quijote",
+  "autor":"Miguel C."
+},{
+  "titulo":"Señor de las moscas",
+  "autor":"William G."                            
+},]
+console.log(infolibros);
+
+function librosn(libro){
+  return libro.titulo === "Crepusculo";
+}
+
+console.log(infolibros.find(libro))
